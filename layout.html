@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Julian Schmitt - CV</title>
+
+<!-- <meta name="viewport" content="width=device-width"/> -->
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="headshot.jpg" alt="Julian Schmitt" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Julian Schmitt</h1>
+			<h2 class="quickFade delayThree">Harvard College</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>email: jschmitt (at) college.harvard.edu</li>
+				<li>GitHub: <a hred="https://github.com/Julians42" target="_blank">Julians42</a></li>
+				<!-- <li>w: <a href="http://www.bloggs.com">www.bloggs.com</a></li>
+				<li>m: 01234567890</li> -->
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id ="navbar">
+		<nav>
+			<ul id="mainMenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Experience</a></li>
+				<li><a href="index.html">Research</a></li>
+				<li><a href="index.html">Awards</a></li>
+				<li><a href="index.html">Athletics</a></li>
+			</ul>
+		</nav>
+	</div>
+
+    {% block main %}
+
+    {% end block %}
+
+	
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

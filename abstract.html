@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Julian Schmitt - CV</title>
+
+<!-- <meta name="viewport" content="width=device-width"/> -->
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="headshot.jpg" alt="Julian Schmitt" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Julian Schmitt</h1>
+			<h2 class="quickFade delayThree">Harvard College</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li><a href="#" class="fa fa-envelope"></a>   jschmitt (at) college.harvard.edu</li>
+				<li><a href="https://github.com/Julians42" target="_blank" class="fa fa-github"></a> <a href="https://github.com/Julians42" target="_blank">   Julians42</a></li>
+				<li><a href="https://www.linkedin.com/in/julian-schmitt-a4450417a/" target="_blank" class="fa fa-linkedin-square"></a> <a href="https://www.linkedin.com/in/julian-schmitt-a4450417a/" target="_blank">Julian Schmitt</a></li>
+				<li><a href="https://www.instagram.com/julians3.1415/" target="_blank" class="fa fa-instagram"></a> <a href="https://www.instagram.com/julians3.1415/" target="_blank">julians3.1415</a></li>
+				<!-- <li>w: <a href="http://www.bloggs.com">www.bloggs.com</a></li>
+				<li>m: 01234567890</li> -->
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id ="navbar">
+		<nav>
+			<ul id="mainMenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="awards.html">Awards</a></li>
+				<li><a href="athletics.html">Athletics</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="mainArea" class="quickFade delayFive">
+        <section>
+            <div class="sectionTitle">
+                <h1>Fall AGU 2020 Abstract</h1>
+            </div>
+            <div class="sectionContent">
+                <h2>Comprehensive California-wide large-scale noise cross correlations </h2>
+                <p class="subDetails">Authors: Julian Schmitt, Tim Clements, Lise Retailleau, Aurelien Mordret, Greg Beroza,  Marine A. Denolle</p>
+                <p>
+                    Ambient noise cross-correlations have proven use in crustal tomography, structure, and source monitoring. We combine 
+                    all available seismic data in the state of California since 2000 until 2020, which accumulates over 2000 asynchronous 
+                    3-component stations combining the Northern California Earthquake Data Center, the Southern California Seismic Network, 
+                    and temporary arrays available at IRIS and nodal data from the BASIN experiment (Clayton et al, 2019). The total original
+                    data size is on the order of 200TB. We create three libraries of ambient noise cross-correlations. The first is a 
+                    low-frequency, 1Hz sampling rate, accounting for all station pairs that are spaced by at least 20 km and cover the entire 
+                    state. The second, intermediate frequency correlation functions of 20 Hz sampling rate, links all stations within 300 km. 
+                    The third is all of the station autocorrelations sampled at 100 Hz or below depending on the instrument.  Here, we frame a 
+                    methodology to compute large scale cross correlations by leveraging cloud computing, GPU processing, and performant scripting
+                    in the Julia language, presented in a companion abstract (Clements et al.).
+                </p>
+                <p>
+                    We keep daily-stacks of the correlation functions to perform monitoring of shallow structure, such as the impact of 
+                    groundwater on seismic velocities, or deeper structure over the course of 20 years. The full stacks of the correlation 
+                    functions can be used for crustal tomography, either with travel-time information or with the full waveforms. The full 
+                    stacks are also used for ground motion prediction in Los Angeles for future earthquakes in another companion abstract 
+                    (Denolle et al.).
+
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </div>
+
+	
+</div>
+<!-- <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script> -->
+</body>
+</html>
