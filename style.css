@@ -393,7 +393,8 @@ section:last-child {
 .button1 {
 	border: none;
 	color: #333;
-	padding: 15px 32px;
+	background-color: #cf8a05;
+	padding: 15px 25px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
