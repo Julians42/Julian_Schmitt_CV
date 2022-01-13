@@ -54,41 +54,75 @@
 	<div id="mainArea" class="quickFade delayFive">
         <section>
             <div class="sectionTitle">
-                <h1>Research Experience</h1>
+                <h1>From Snow Droughts</h1>
+            </div>
+            <div class="sectionContent">
+                <h2> NOAA PSL/GFDL Snow Droughts Intership</h2>
+                <p class="subDetails">Funded by the NOAA Hollings Scholarship Program</p>
+                <p>
+                    During summer 2021, I conducted research on snow droughts in the Western United States under the direction of 
+					of Mimi Hughes (NOAA PSL Boulder Lab) and Nathaniel Johnson and Kai-Chih Tseng (GFDL/Princeton). Our work sought 
+					to answer explore what sorts of snow conditions we might expect in the coming century deriving this variability from
+					a large ensemble climate model. I am currently preparing to give a talk at AMS in January and working towards publication.
+					Check the project out on <a href=https://github.com/Julians42/Snow_Droughts>GitHub.</a>
+                </p>
+                <p>
+                    The goal of the project is to use the variability that the large ensemble captures to 
+                    explore the potential distribution of onset of snow drought/ low-snow conditions in the 
+                    US West. As a model-based project, I developed methodology to classify drought severity 
+                    conditions based on historical snowfall, finding that climatological shifts are first observed
+                    early in the 20th century. We further leverage ensemble variability to highlight when regions across
+                    the west are both expected to transition to low-snow climates (based on historical snowfall) and 
+                    may transition to low snow condtions, which, due to variability in atmospheric conditions 
+                    could happen up to 15 years earlier. I am presenting my findings at AMS 2022 and am currently working
+                    towards publication. View a more detailed summary at the button below:
+                </p>
+                <div class="clear"></div>
+
+            </div>
+        </section>
+        <section>
+            <div>
+                <center>  
+                    <p class="subtitle"><a href="abstract.html"><button class= "button1">View Conference Abstracts</button></a></p>
+                </center>
+            </div>
+
+            <div class="clear"></div>
+        </section>
+
+        <section>
+            <div class="sectionTitle">
+                <h1> to Earthquakes</h1>
             </div>
             <div class="sectionContent">
                 <h2>Harvard Seismology Group</h2>
                 <p class="subDetails">Undergraduate Research Position</p>
-                <p class="subtitle">The Story</p>
-                <p>
-                    During the spring of 2020, I took an introductory seismology class, more out of curiosity than anything else. A few weeks 
-                    before Harvard sent all undergraduates home, my professor, Marine A. Denolle mentioned that she had a few opportunties 
-                    doing research with her group. I jumped at the chance and when my original summer plans were cancelled, I was able to stay
-                    on for the summer. From group meetings and presentations, to outside talks and question sessions, to debugging code and most
-                    recently submitting an abstract for AGU this fall, I've gotten to experience what working on, and for the most part leading, a
-                    long-term research project is like. The current plan is to continue research into the fall and write several papers about our 
-                    project and results (see below). 
+                <p>Beginning spring 2020 I joined the Harvard Seismology group as a research assistant for a term-time position, which ulimately
+                    morphed into a 15-month position, following my PI Marine A. Denolle to the University of Washington during Spring 2021. From 
+                    group meetings, inter-department collaboration, seminars and presentations at two fall conferences (SCEC and AGU) I've experienced
+                    what research in a graduate lab is like. 
                 </p>
-                <p class="subtitle">The Details:   <a href="abstract.html"><button class= "button1">View Abstract</button></a></p>
+                <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FXAfTwcDiNw" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </center>
                 <p>
-                    The project I'm working on involves using seismic data from California to produce large-scale ambient noise cross-correlations (ANCC), with
-                    the goal of running these correlations for a 20 year period. These cross-correlations are mostly used for tomography and monitoring to, 
-                    for example, study groundwater level changes, map velocities of seismic waves, and predict groundmotion in an earthquake. As the number
-                    of cross-correlations we need to compute is so large, I've learned the high-performance computing language Julia (no, sadly it's not named 
-                    after me) as well as the interfaces for Amazon's EC2 and S3 cloud computing and storage interfaces, as we expect to process several terabytes 
-                    of data. While my focus has been building the codes and infrastructure to run the cross-correlations, we've been working with seismologists at Stanford and San Diego State Universities
-                    to expand our correlation network to the whole of California, and cross-validate a Los Angeles earthquake simulation with the ANCCs, respectively. 
-                    The abstract to the paper I'm working on this fall, along with my professor, a graduate student, and the Stanford team, can be found above.
+                    Both of the projects I worked on utilized Amazon's EC2 and S3 cloud computing and storage interfaces. Leveraging
+                    these tools allowed us to overcome challenges associated with storing, moving, and computing with hundreds of terabytes of seismological data. 
+                    The first project involved roughly 20 TB of nodal data from sensors deployed in the Los Angeles basin. Using pair-wise comparisons (or cross-correlations)
+                    of the waveforms we derived estimates for the severity of expected groundmotion for a potential future San Andreas Fault area earthquake. We collaborated with
+                    a team at UC San Diego who were running numerical eathquake simulations to verify these findings. My role specifically was developing the script and cloud architecture
+                    to run the empirical cross-correlation calculations along with post-processing and plotting results, presented weekly at the project meeting.
                 </p>
-            </div>
-            <div class="sectionContent">
-                <h2> NOAA Hollings Undergraduate Scholarship</h2>
-                <p class="subDetails">Awarded Spring 2020</p>
                 <p>
-                    See <a href="awards.html">Awards</a> section.
+                    The second project scaled up the first by an order of magnitude, with a target of computing 20 years of cross correlations for all of California. 
+                    I developed a docker-parallelized script to scrape over 70 TB of raw waveforms from the FDSN in under 72 hours resulting in a 10x improvement in both cost and speed 
+                    over a similar technique published in MacCarthy et al. 2020. The video above is the preview for the talk I gave at AGU.
                 </p>
 
-            </div>
+            </div>                
             <div class="clear"></div>
         </section>
     </div>
@@ -103,6 +137,26 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 var pageTracker = _gat._getTracker("UA-3753241-1");
 pageTracker._initData();
 pageTracker._trackPageview();
-</script> -->
+</script> 
+
+                <p>
+                    During the spring of 2020, I took an introductory seismology class, more out of curiosity than anything else. A few weeks 
+                    before Harvard sent all undergraduates home, my professor, Marine A. Denolle mentioned that she had a few opportunties 
+                    doing research with her group. I jumped at the chance and when my original summer plans were cancelled, I was able to stay
+                    on for the summer. From group meetings and presentations, to outside talks and question sessions, to debugging code and most
+                    recently submitting an abstract for AGU this fall, I've been able to experience what working on, and for the most part leading, a
+                    long-term research project is like. The current plan is to continue research into the fall and write several papers about our 
+                    project and results (see below). 
+                </p>
+                <p>
+                    The project I worked on involved using seismic data from California to produce large-scale ambient noise cross-correlations, with
+                    the goal of running these correlations for a 20 year period. These cross-correlations are mostly used for tomography and monitoring, 
+                    for example, to study groundwater level changes, map velocities of seismic waves, and predict groundmotion in an earthquake. As the number
+                    of cross-correlations we need to compute is so large, I've learned the high-performance computing language Julia (no, sadly it's not named 
+                    after me) as well as the interfaces for Amazon's EC2 and S3 cloud computing and storage interfaces, as we expect to process several terabytes 
+                    of data. While my focus has been building the codes and infrastructure to run the cross-correlations, we've been working with seismologists at Stanford and San Diego State Universities
+                    to expand our correlation network to the whole of California, and cross-validate a Los Angeles earthquake simulation with the ANCCs, respectively. 
+                    The abstract of the paper I'm working on this fall, along with my professor, a graduate student, and the Stanford team, can be found above.
+                </p> -->
 </body>
 </html>
